@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+main {
+  background-image: url(./kosmos-art-tumannosti-ogni.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+  position: relative;
+}
+
+#input-form {
+  height: 50px;
+  width: 635px;
+  padding: 0 50px 0 15px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+#write-down {
+  height: 53px;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgba(43, 202, 226, 0.689);
+  transition: background-color linear 0.3s;
+  border-radius: 0 10px 10px 0;
+  margin: 0;
+  font-size: 14px;
+  color: rgb(234, 234, 234);
+}
+
+#write-down:hover {
+  background-color: rgb(45, 174, 194);
+  border: 1px solid white;
+  height: 50px
+}
+
+#clear-btn {
+  position: absolute;
+  right: 105px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity linear 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color linear 0.2s;
+}
+
+#clear-btn:hover {
+  opacity: 1;
+  background-color: rgb(225, 225, 225);
+}
+
+.board {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6dc0c891;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #56999f;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+.new-div {
+  
+  width: 220px;
+  min-height: 100px;
+  margin: 20px 5px;
+  padding: 8px;
+  background-color: rgba(49, 75, 137, 0.375);
+  transition: background-color linear 0.2s;
+  border-radius: 20px;
+  color:rgb(234, 234, 234);
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.new-div:hover {
+  background-color: rgba(22, 23, 50, 0.937);
+}
